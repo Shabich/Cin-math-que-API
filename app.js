@@ -73,11 +73,11 @@ function renderFavorites() {
 document.addEventListener('DOMContentLoaded', renderFavorites);
 
 searchButton.addEventListener('click', search);
-//----------> keypress ne fonctionne pas :(
-// searchButton.addEventListener('keypress', function (e) {
-//     if (e.key === 'Enter') {
-//         search();
-//     }});
+
+window.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        search();
+    }});
 
 
     function search (){
