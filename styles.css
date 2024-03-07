@@ -1,0 +1,129 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 50px;
+    padding: 50px;
+    ;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#filmliste {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-info {
+    padding: 10px;
+}
+
+.movie h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.movie p {
+    margin: 0;
+    color: #666;
+}
+
+.favorite-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    background-color: #424242;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.favorite-button:hover {
+    background-color: rgb(63, 63, 63);
+    color: rgb(255, 255, 255);
+}
+.favorite-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favorite-item span {
+    font-size: 16px;
+}
+
+.remove-button {
+    background-color: #ffffff;
+    color: #0c0c0c;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.cinematheque{
+    height: 50vh;
+    width:90vw;
+    display: flex;
+    background-image: url(cinematheque.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
